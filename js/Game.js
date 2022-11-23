@@ -262,22 +262,22 @@ class Game {
 
   showFuelBar() {
     push();
-    image(fuelImage, width / 2 - 130, height - player.positionY + 100, 20, 20);
+    image(fuelImage, width / 2 - 130, height - player.positionY - 250, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY + 100, 185, 20);
+    rect(width / 2 - 100, height - player.positionY - 250, 185, 20);
     fill("#ffc400");
-    rect(width / 2 - 100, height - player.positionY + 100, player.fuel, 20);
+    rect(width / 2 - 100, height - player.positionY - 250, player.fuel, 20);
     noStroke();
     pop();
   }
 
   showLife() {
     push();
-    image(lifeImage, width / 2 - 130, height - player.positionY +50, 20, 20);
+    image(lifeImage, width / 2 - 130, height - player.positionY - 300, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY +50, 185, 20);
+    rect(width / 2 - 100, height - player.positionY -300, 185, 20);
     fill("#f50057");
-    rect(width / 2 - 100, height - player.positionY +50, player.life, 20);
+    rect(width / 2 - 100, height - player.positionY -300, player.life, 20);
     noStroke();
     pop();
   }
